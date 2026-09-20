@@ -1,0 +1,648 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mehmetbeyazsacli.github.io/risk-analizi/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://mehmetbeyazsacli.github.io/risk-skalasi/sitemap.xml
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kadın Cinayeti Risk Farkındalığı Analizi — Dr. Psk. Dnş. Mehmet Beyazsaçlı</title>
+<meta name="description" content="Kadın cinayeti risk göstergelerini literatüre dayalı olarak değerlendiren, ücretsiz ve gizli bir farkındalık analizi. Hiçbir veri kaydedilmez. Dr. Psk. Dnş. Mehmet Beyazsaçlı tarafından hazırlanmıştır.">
+<meta name="keywords" content="kadın cinayeti, femicide, risk ölçeği, aile içi şiddet, kadına yönelik şiddet, danger assessment, öz değerlendirme, boşanma güvenliği">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Dr. Psk. Dnş. Mehmet Beyazsaçlı">
+<!-- Open Graph / sosyal medya önizlemesi -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kadın Cinayeti Risk Farkındalığı Analizi — Dr. Psk. Dnş. Mehmet Beyazsaçlı">
+<meta property="og:description" content="Kadın cinayeti risk göstergelerini literatüre dayalı olarak değerlendiren, ücretsiz ve gizli bir farkındalık analizi. Hiçbir veri kaydedilmez.">
+<meta property="og:locale" content="tr_TR">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kadın Cinayeti Risk Farkındalığı Analizi — Dr. Psk. Dnş. Mehmet Beyazsaçlı">
+<meta name="twitter:description" content="Kadın cinayeti risk göstergelerini literatüre dayalı olarak değerlendiren, ücretsiz ve gizli bir farkındalık analizi.">
+<style>
+  :root {
+    --bg: #faf7f5;
+    --card-bg: #ffffff;
+    --text: #2b2320;
+    --text-muted: #6b5f5a;
+    --border: #e8ddd7;
+    --accent: #a23e48;
+    --accent-soft: #f3e2e4;
+    --none: #b9b0aa;
+    --none-bg: #f1ede9;
+    --low: #4a7a5a;
+    --mid: #b8860b;
+    --high: #c1553f;
+    --high-bg: #fbe6de;
+    --severe: #7a1f2b;
+    --severe-bg: #f2d4d8;
+    --chip-bg: #f4efec;
+    --radius: 14px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1c1613;
+      --card-bg: #262019;
+      --text: #f1e9e4;
+      --text-muted: #b8aaa2;
+      --border: #3a312b;
+      --accent: #e08b93;
+      --accent-soft: #3a2429;
+      --none: #6b6058;
+      --none-bg: #2c2620;
+      --low: #7fbf94;
+      --mid: #e0b84a;
+      --high: #e6896f;
+      --high-bg: #452a20;
+      --severe: #f0a5ac;
+      --severe-bg: #4a1f26;
+      --chip-bg: #302923;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1c1613;
+    --card-bg: #262019;
+    --text: #f1e9e4;
+    --text-muted: #b8aaa2;
+    --border: #3a312b;
+    --accent: #e08b93;
+    --accent-soft: #3a2429;
+    --none: #6b6058;
+    --none-bg: #2c2620;
+    --low: #7fbf94;
+    --mid: #e0b84a;
+    --high: #e6896f;
+    --high-bg: #452a20;
+    --severe: #f0a5ac;
+    --severe-bg: #4a1f26;
+    --chip-bg: #302923;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    min-height: 100%;
+  }
+  .wrap { max-width: 660px; margin: 0 auto; padding: 28px 16px 60px; }
+  header { text-align: center; margin-bottom: 18px; }
+  header h1 { font-size: 1.45rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  header p { color: var(--text-muted); font-size: 0.93rem; margin: 0; }
+  header p.author-line { color: var(--accent); font-size: 0.82rem; font-weight: 600; margin: 0 0 10px; }
+
+  .privacy-note {
+    background: var(--chip-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .privacy-note .icon { flex-shrink: 0; font-size: 1.05rem; }
+
+  .hotlines { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .hotline-chip {
+    background: var(--accent-soft); color: var(--accent);
+    border-radius: 999px; padding: 6px 14px;
+    font-size: 0.8rem; font-weight: 600; white-space: nowrap;
+  }
+
+  .legend {
+    font-size: 0.78rem; color: var(--text-muted);
+    margin-bottom: 18px; padding: 10px 14px;
+    background: var(--chip-bg); border-radius: var(--radius);
+  }
+  .legend b { color: var(--text); }
+
+  .section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 16px 8px;
+    margin-bottom: 14px;
+  }
+  .section h2 {
+    font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--text-muted); margin: 0 0 2px;
+  }
+  .item { padding: 14px 0; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .item:first-of-type { border-top: none; }
+  .item p.q { margin: 0; font-size: 0.95rem; flex: 1; }
+
+  .yesno-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    flex-shrink: 0;
+    width: 148px;
+  }
+  .yn-btn {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 9px 4px;
+    font-size: 0.82rem;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 700;
+    transition: transform 0.08s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .yn-btn:active { transform: scale(0.94); }
+
+  .yn-btn[data-val="0"] { background: var(--none-bg); color: var(--text-muted); opacity: 0.7; }
+  .yn-btn[data-val="1"] { background: var(--high-bg); color: var(--high); opacity: 0.6; }
+
+  .yn-btn[data-val="0"].active { background: var(--none); color: #ffffff; border-color: var(--none); opacity: 1; }
+  .yn-btn[data-val="1"].active { background: var(--accent); color: #ffffff; border-color: var(--accent); opacity: 1; }
+
+  .progress-panel {
+    position: sticky; bottom: 10px; margin-top: 22px;
+    border-radius: var(--radius); padding: 16px 20px;
+    border: 1px solid var(--border); background: var(--card-bg);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+    text-align: center;
+  }
+  .progress-panel .progress-text {
+    font-size: 0.92rem; font-weight: 600; margin: 0 0 10px; color: var(--text);
+  }
+  .progress-panel .progress-bar {
+    height: 8px; border-radius: 999px; background: var(--chip-bg); overflow: hidden;
+  }
+  .progress-panel .progress-fill {
+    height: 100%; border-radius: 999px; background: var(--none);
+    transition: width 0.25s ease; width: 0%;
+  }
+  .progress-panel .progress-hint {
+    font-size: 0.8rem; color: var(--text-muted); margin: 10px 0 0;
+  }
+
+  .result {
+    display: none;
+    position: sticky; bottom: 10px; margin-top: 22px;
+    border-radius: var(--radius); padding: 20px;
+    border: 1px solid var(--border); background: var(--card-bg);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+    text-align: center;
+  }
+  .result.show { display: block; }
+  .result .pct-display {
+    font-size: 2.6rem; font-weight: 800; line-height: 1; margin: 0 0 4px;
+    letter-spacing: -0.02em;
+  }
+  .result .pct-label {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: var(--text-muted); margin: 0 0 14px;
+  }
+  .result .level { font-size: 1.08rem; font-weight: 700; margin: 0 0 6px; }
+  .result .desc { font-size: 0.89rem; color: var(--text-muted); margin: 0 0 10px; text-align: left; }
+  .result .score-bar { height: 10px; border-radius: 999px; background: var(--chip-bg); overflow: hidden; margin-bottom: 14px; }
+  .result .score-fill { height: 100%; border-radius: 999px; transition: width 0.4s ease, background 0.35s ease; width: 0%; }
+  .level-low { color: var(--low); }
+  .level-mid { color: var(--mid); }
+  .level-high { color: var(--high); }
+  .level-severe { color: var(--severe); }
+
+  .top-hits {
+    margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border);
+    font-size: 0.83rem; text-align: left;
+  }
+  .top-hits ol { margin: 6px 0 0; padding-left: 20px; }
+  .top-hits li { margin-bottom: 4px; }
+  .top-hits li .crit-mark { color: var(--accent); font-weight: 700; }
+
+  .guidance-box { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); font-size: 0.9rem; text-align: left; }
+  .guidance-box ul { margin: 8px 0 0; padding-left: 20px; }
+  .guidance-box li { margin-bottom: 8px; }
+  .guidance-box li b { color: var(--accent); }
+
+  .resources { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--border); font-size: 0.87rem; text-align: left; }
+  .resources ul { margin: 6px 0 0; padding-left: 20px; }
+  .resources li { margin-bottom: 4px; }
+
+  .reset-btn {
+    display: block; width: 100%; margin-top: 22px; padding: 12px;
+    border-radius: 999px; border: 1px solid var(--border);
+    background: none; color: var(--text-muted); font-size: 0.87rem; cursor: pointer;
+  }
+  .reset-btn:active { opacity: 0.7; }
+
+  footer { text-align: center; font-size: 0.76rem; color: var(--text-muted); margin-top: 28px; padding: 0 8px; }
+  footer .methodology-note { font-size: 0.66rem; margin-top: 10px; opacity: 0.85; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🛡️ Kadın Cinayeti Risk Farkındalığı Analizi</h1>
+    <p class="author-line">Dr. Psk. Dnş. Mehmet Beyazsaçlı tarafından hazırlanmıştır</p>
+    <p>Her maddeyi <strong>Evet / Hayır</strong> olarak yanıtlayın. Sonuç, tüm maddeleri işaretledikten sonra tek seferde, <strong>yüzdelik tehdit düzeyi</strong> olarak görünecek.</p>
+  </header>
+
+  <div id="form"></div>
+
+  <div class="progress-panel" id="progress-panel">
+    <p class="progress-text" id="progress-text">0 / 0 madde yanıtlandı</p>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    <p class="progress-hint">Tüm maddeleri işaretlediğinizde sonuç burada görünecek.</p>
+  </div>
+
+  <div class="result" id="result">
+    <p class="pct-display" id="pct-display">0 / 0</p>
+    <p class="pct-label">Kritik gösterge sayınız (0=yok · 1=dikkat gerektiren · 2=yüksek · 3+=acil — ağırlık kullanılmaz)</p>
+    <div class="score-bar"><div class="score-fill" id="score-fill"></div></div>
+    <p class="level" id="level-text"></p>
+    <p class="desc" id="level-desc"></p>
+    <div class="guidance-box" id="guidance-box">
+      <strong>İşaretlediğiniz göstergelere özel öneriler:</strong>
+      <ul id="guidance-list"></ul>
+    </div>
+    <div class="top-hits" id="top-hits-box">
+      <strong>"Evet" işaretlediğiniz göstergeler (kritik olanlar ✱ ile işaretli):</strong>
+      <ol id="top-hits-list"></ol>
+    </div>
+    <div class="resources" id="resources-box">
+      <strong>Genel kaynaklar:</strong>
+      <ul id="resources-list"></ul>
+    </div>
+  </div>
+
+  <button class="reset-btn" id="reset-btn">Tüm işaretlemeleri temizle</button>
+
+  <footer>
+    Bu araç tıbbi, hukuki veya profesyonel bir risk değerlendirmesinin yerini tutmaz; Campbell ve ark.'nın Danger Assessment çalışmasından ve ilgili literatürden esinlenen eğitici bir öz-farkındalık aracıdır. Ciddi endişeniz varsa lütfen bir uzmana ya da kendi ülkenizde 24 saat hizmet veren danışma veya polis imdat servisine danışın.
+    <p class="methodology-note">Bu, standardize edilmiş, psikometrik olarak doğrulanmış bir ölçek değildir. Bu bir farkındalık/tarama listesidir — literatürde kadın cinayetiyle (femicide) ilişkilendirilmiş göstergelerin sentezine dayanır, ama Cronbach alfa, test-tekrar test güvenirliği, ROC eğrisi/duyarlılık-özgüllük analizi gibi resmi doğrulama süreçlerinden geçmemiştir. Amacı, bu göstergeleri fark etmenizi sağlamaktır; bireysel bir cinayet olasılığını hesaplamaz, tanı koymaz veya kesin bir risk öngörüsünde bulunmaz — amacı kişiyi bilgilendirip profesyonel desteğe yönlendirmektir.</p>
+  </footer>
+</div>
+
+<script>
+// Her madde Evet/Hayır olarak yanıtlanır, ancak her maddenin taşıdığı tehlike/duygusal etki farklı olduğu için
+// puan değeri de farklıdır (1-4 arası ağırlık). Örn. intihar girişimi veya boğma 4 puan, kıskançlık nöbeti 1 puan
+// taşır. Evet = madde ağırlığı kadar puan, Hayır = 0 puan.
+// "critical: true" işaretli maddeler literatürde en güçlü öngörücü olan, fiilen gerçekleşmiş ya da
+// doğrudan ölüm tehdidi/koruma kararı ihlali niteliğindeki göstergelerdir.
+// Sonuç yalnızca TÜM maddeler yanıtlandıktan sonra tek seferde, genel puana dayalı risk durumu olarak gösterilir.
+// Ağırlıklar (0-10): literatürdeki ilişki gücüne göre sıralı (ordinal) bir puanlamadır — belirli bir çalışmanın
+// birebir istatistiksel katsayısı değil, birden fazla çalışmadaki bulguların sentezine dayanan göreli bir ölçektir.
+
+const sections = [
+  {
+    title: "Şiddetin niteliği ve tırmanması",
+    items: [
+      { key: "fizikselSiddet", text: "En az bir kere fiziksel şiddet gördüm (itme, tokat, dövme vb.)", weight: 3 },
+      { key: "bogma", text: "Eşim en az bir kere boğazımı sıktı / nefesimi kesti (fiilen boğma girişimi)", weight: 10 },
+      { key: "bogmaTehdit", text: "Beni boğmakla / nefesimi keseceğiyle ilgili tehditlerde bulunuyor (yalnızca sözlü)", weight: 5 },
+      { key: "silahFiilen", text: "Eşim bana karşı en az bir kere fiilen silah kullandı (ateş etti, doğrultup tetiği çekti, yaraladı vb.)", weight: 10 },
+      { key: "silahTehdit", text: "Beni silahla tehdit ediyor (göstererek, doğrultarak; kullanmadı)", weight: 6 },
+      { key: "silahEvde", text: "Eşim evde ateşli silaha erişebilir durumda", weight: 3 },
+      { key: "cinselZorlama", text: "Eşim beni istemediğim halde en az bir kere cinsel ilişkiye zorladı (fiziksel şiddet, tehdit veya ısrar yoluyla)", weight: 8 },
+    ]
+  },
+  {
+    title: "Tehdit ve sözler",
+    items: [
+      { key: "olumTehdidi", text: 'Sözle "Seni öldürürüm" ya da buna benzer bir ölüm tehdidinde bulunuyor', weight: 9 },
+      { key: "intiharSozlu", text: "Eşim en az bir kere kendini öldüreceğinden bahsetti", weight: 3 },
+      { key: "intiharFiilen", text: "Eşim en az bir kere intihar girişiminde bulundu", weight: 7 },
+      { key: "ayrilirsamZarar", text: "Ayrılırsam bana veya kendine zarar vereceğini ima ediyor", weight: 4 },
+    ]
+  },
+  {
+    title: "Kontrol ve takip",
+    items: [
+      { key: "kiskanclik", text: "Kıskançlık nöbetleri (sorgulama, telefon kontrolü, suçlama)", weight: 2 },
+      { key: "takip", text: "Nerede olduğumu sürekli bilmek istiyor, beni takip ediyor", weight: 8 },
+      { key: "izolasyon", text: "Ailemden / arkadaşlarımdan izole olmam için baskı yapıyor", weight: 2 },
+      { key: "kontrolParaIs", text: "Param, işim veya bağımsız hareket etme imkanım üzerinde kontrol kuruyor", weight: 2 },
+      { key: "supheleniyor", text: "Başka biriyle birlikte olduğumdan (gerçek dışı da olsa) şüpheleniyor", weight: 2 },
+      { key: "bagimsizlastigimda", text: "Bağımsızlaştığım (yeni iş, gelir, özgürlük) anlarda tepkisi sertleşiyor", weight: 2 },
+    ]
+  },
+  {
+    title: "Şu anki durum",
+    items: [
+      { key: "ayrilmaDusundum", text: "Ayrılmayı düşündüğümü ona söylediğimde tepkisi sertleşti", weight: 2 },
+      { key: "fiilenAyrildim", text: "Yakın zamanda fiilen ayrıldım / ayrılma sürecindeyiz ve bu duruma tepkisi artarak devam ediyor", weight: 9 },
+      { key: "korumaKarariIhlal", text: "Hakkımdaki koruma kararını ihlal ediyor", weight: 9 },
+    ]
+  }
+];
+
+// Kritik = ağırlığı 3 veya 4 olan maddeler (boğma, silah fiilen, cinsel zorlama fiilen, ölüm tehdidi,
+// intihar fiilen, takip, fiilen ayrılma, koruma kararı ihlali). Bunlar literatürde en yüksek "ölümcüllük/
+// duygusal tehlike" değerine sahip göstergelerdir ve en fazla puanı taşır.
+
+// Madde bazlı özel öneriler: her kritik madde "Evet" olduğunda, o maddeye özgü somut bir öneri gösterilir
+// (jenerik metin değil). Bunlar tıbbi/hukuki tavsiye yerine geçmez, ama madde bazında yön gösterir.
+const ITEM_GUIDANCE = {
+  bogma: 'Boğma girişimi yaşadıysanız: bu, literatürde kadın cinayetinin <b>en güçlü tek göstergesi</b> kabul ediliyor. Belirti olmasa bile bir sağlık kuruluşuna başvurun (boğulma sonrası iç yaralanmalar gecikmeli ortaya çıkabilir) ve olayı kayıt altına aldırın.',
+  silahFiilen: 'Size karşı fiilen silah kullanıldıysa: güvenlik planınızda silahın evden uzaklaştırılmasını/el konulmasını öncelik haline getirin; bu olayı yetkililere bildirmeyi değerlendirin.',
+  cinselZorlama: 'Cinsel zorlamaya maruz kaldıysanız: bu tek başına bağımsız bir kritik göstergedir. Olaydan sonraki 72 saat içinde delil kaybolmadan tıbbi muayene ve hukuki destek almanız önemlidir.',
+  olumTehdidi: 'Doğrudan ölüm tehdidi aldıysanız: bu sözü asla hafife almayın. Mümkünse mesaj/ses kaydı gibi kanıt biriktirin ve bir uzmana ya da yetkililere bildirin.',
+  intiharFiilen: 'Fiilen intihar girişiminde bulunduysa: bu, bazı vakalarda cinayet-intihar riskiyle ilişkilendiriliyor. Kendinizi (ve varsa çocuklarınızı) bu girişimlerin yaşandığı ortamdan güvenli bir mesafede tutmayı düşünün.',
+  takip: 'Takip ediliyorsanız: telefonunuzdaki konum paylaşımlarını gözden geçirip kapatın, sık kullandığınız güzergahları değiştirin ve durumu güvendiğiniz birine bildirin.',
+  fiilenAyrildim: 'Fiilen ayrıldıysanız: literatürde bu, riskin istatistiksel olarak en yüksek olduğu dönemdir. Yalnız kalmamaya, yeni adresinizi gizli tutmaya ve güvenlik planınızı bu döneme göre güncellemeye özen gösterin.',
+  korumaKarariIhlal: 'Koruma kararı ihlal ediliyorsa: her ihlali, ne kadar küçük görünürse görünsün, yetkililere bildirin — kararın fiilen koruma sağlaması için ısrarcı olmanız gerekebilir.',
+};
+
+// Kombinasyon bazlı özel öneriler: belirli davranışlar BİRLİKTE görüldüğünde tetiklenir.
+const COMBO_GUIDANCE = {
+  physicalComboCritical: 'Fiziksel şiddet, boğma/silah/cinsel zorlama/ölüm tehdidinden biriyle birlikte yaşanıyorsa: bu tırmanan bir şiddet örüntüsüne işaret eder. Bunu tek seferlik bir olay gibi değil, artan bir tehlike sinyali gibi değerlendirip güvenlik planınızı ertelemeden yapın.',
+  controlClusterCritical: 'Kıskançlık, takip, izolasyon, kontrol ve şüphelenme birlikte görülüyorsa: bu "baskıcı kontrol" örüntüsüdür. Ayrılma kararı alacaksanız bunu tek başınıza değil, bir uzmanın desteğiyle ve güvenli bir plan çerçevesinde yapmanız önerilir.',
+  gunAccessCombo: 'Evde silah bulunması, silahla tehdit veya fiilen kullanımla birlikte görülüyorsa: literatürde bu, en yüksek ölümcüllük kombinasyonlarından biridir. Silahın ortamdan uzaklaştırılması için yasal yolları (koruma kararı, el koyma talebi) araştırmanız önemle önerilir.',
+  jealousyStalkingCombo: 'Aşırı kıskançlık, takip etme davranışıyla birlikte görülüyorsa: telefonunuzdaki ve hesaplarınızdaki dijital güvenliğinizi (konum paylaşımı, ortak hesaplar, izin verilen uygulamalar) gözden geçirin.',
+  postSeparationStalking: 'Ayrıldıktan sonra hâlâ takip ediliyorsanız: bu, takip davranışının literatürde özellikle tehlikeli sayılan bir alt biçimidir. Güvenlik planınızı bu duruma göre acilen güncelleyin ve durumu yetkililere bildirmeyi değerlendirin.',
+  sexualViolenceEscalation: 'Fiilen cinsel zorlama, boğma/fiilen silah kullanımı/ölüm tehdidinden biriyle birlikte görülüyorsa: bu, genel bir aşırı şiddet örüntüsünün parçası olduğunu teyit eder. Tıbbi/hukuki başvurunuzda bu birlikteliği mutlaka belirtin.',
+};
+
+const state = {};
+const formEl = document.getElementById('form');
+
+sections.forEach((section, sIdx) => {
+  const sectionEl = document.createElement('div');
+  sectionEl.className = 'section';
+  const h2 = document.createElement('h2');
+  h2.textContent = section.title;
+  sectionEl.appendChild(h2);
+
+  section.items.forEach((item, iIdx) => {
+    const id = `s${sIdx}i${iIdx}`;
+    state[id] = { val: null, weight: item.weight, text: item.text, key: item.key };
+
+    const itemEl = document.createElement('div');
+    itemEl.className = 'item';
+
+    const q = document.createElement('p');
+    q.className = 'q';
+    q.textContent = item.text;
+    itemEl.appendChild(q);
+
+    const group = document.createElement('div');
+    group.className = 'yesno-group';
+    group.dataset.id = id;
+
+    [['Hayır', 0], ['Evet', 1]].forEach(([label, val]) => {
+      const btn = document.createElement('div');
+      btn.className = 'yn-btn';
+      btn.dataset.val = val;
+      btn.textContent = label;
+      group.appendChild(btn);
+    });
+
+    itemEl.appendChild(group);
+    sectionEl.appendChild(itemEl);
+  });
+  formEl.appendChild(sectionEl);
+});
+
+const TOTAL_ITEMS = Object.keys(state).length;
+const MAX_WEIGHT_TOTAL = Object.values(state).reduce((sum, s) => sum + s.weight, 0) + 38; // +38: tüm kombinasyon/küme sinerji puanlarının olası toplamı (6+6+8+4+8+6=38)
+
+const progressPanel = document.getElementById('progress-panel');
+const progressText = document.getElementById('progress-text');
+const progressFill = document.getElementById('progress-fill');
+const resultBox = document.getElementById('result');
+
+function updateProgress() {
+  const answered = Object.values(state).filter(s => s.val !== null).length;
+  progressText.textContent = `${answered} / ${TOTAL_ITEMS} madde yanıtlandı`;
+  progressFill.style.width = Math.round((answered / TOTAL_ITEMS) * 100) + '%';
+
+  if (answered === TOTAL_ITEMS) {
+    progressPanel.style.display = 'none';
+    resultBox.classList.add('show');
+    renderResult();
+  } else {
+    progressPanel.style.display = 'block';
+    resultBox.classList.remove('show');
+  }
+}
+
+// Etkileşim: her gruptaki butona tıklanınca sadece o maddenin durumu güncellenir;
+// sonuç paneli TÜM maddeler yanıtlanana kadar hesaplanmaz/görünmez.
+formEl.addEventListener('click', (e) => {
+  const btn = e.target.closest('.yn-btn');
+  if (!btn) return;
+  const group = btn.closest('.yesno-group');
+  const id = group.dataset.id;
+  const val = parseInt(btn.dataset.val, 10);
+  state[id].val = val;
+  [...group.children].forEach(c => {
+    c.classList.toggle('active', parseInt(c.dataset.val, 10) === val);
+  });
+  updateProgress();
+});
+
+function renderResult() {
+  const fill = document.getElementById('score-fill');
+  const pctDisplay = document.getElementById('pct-display');
+  const levelText = document.getElementById('level-text');
+  const levelDesc = document.getElementById('level-desc');
+  const resourcesList = document.getElementById('resources-list');
+  const topHitsList = document.getElementById('top-hits-list');
+
+  const items = Object.values(state).map(s => ({
+    text: s.text,
+    weight: s.weight,
+    critical: s.weight >= 7, // ağırlığı 7-10 olan maddeler en güçlü ilişkili (kritik) göstergeler kabul edilir
+    val: s.val,
+    key: s.key
+  }));
+
+  const yesItems = items.filter(it => it.val === 1);
+  const byKey = {};
+  items.forEach(it => { byKey[it.key] = it.val === 1; });
+
+  // --- Bağlantılı gösterge mantığı ---
+  // 1) Fiziksel şiddet TEK BAŞINA en yüksek ağırlığı taşımaz. Ancak boğma, fiilen silah kullanımı,
+  //    fiilen cinsel zorlama veya doğrudan ölüm tehdidiyle BİRLİKTE görüldüğünde tırmanan bir şiddet
+  //    örüntüsüne işaret eder ve ekstra puan + kritik sayılır.
+  const physicalComboCritical = byKey.fizikselSiddet && (
+    byKey.bogma || byKey.silahFiilen || byKey.cinselZorlama || byKey.olumTehdidi
+  );
+
+  // 2) Kontrol/baskıcı kontrol kümesi: kıskançlık, takip, izolasyon, para/iş kontrolü, şüphelenme,
+  //    bağımsızlaştığında sertleşme — bu davranışların TEK TEK değil, BİRLİKTE (3 veya daha fazlası)
+  //    görülmesi güçlü bir risk örüntüsü oluşturur (coercive control).
+  const controlClusterKeys = ['kiskanclik', 'takip', 'izolasyon', 'kontrolParaIs', 'supheleniyor', 'bagimsizlastigimda'];
+  const controlClusterCount = controlClusterKeys.filter(k => byKey[k]).length;
+  const controlClusterCritical = controlClusterCount >= 3;
+
+  // 3) Evde silah bulunması TEK BAŞINA düşük risklidir (sadece erişim/bağlam). Ancak silahla tehdit edilmiş,
+  //    fiilen silah kullanılmış, boğulmuş ya da doğrudan ölüm tehdidi almış olmakla BİRLİKTE görüldüğünde,
+  //    literatürde en yüksek ölümcüllük kombinasyonlarından biri haline gelir (Campbell ve ark.).
+  const gunAccessCombo = byKey.silahEvde && (
+    byKey.silahTehdit || byKey.silahFiilen || byKey.olumTehdidi || byKey.bogma
+  );
+
+  // 4) Aşırı kıskançlık + takip birlikte görüldüğünde, tekil kıskançlıktan çok daha güçlü bir baskıcı
+  //    kontrol/saplantı örüntüsüne işaret eder.
+  const jealousyStalkingCombo = byKey.kiskanclik && byKey.takip;
+
+  // 5) Ayrılık sonrası takip (fiilen ayrılmış olup hâlâ takip ediliyor olmak), literatürde takip
+  //    davranışının en tehlikeli özel biçimlerinden biridir — "post-separation stalking".
+  const postSeparationStalking = byKey.takip && byKey.fiilenAyrildim;
+
+  // 6) Fiilen cinsel zorlama, boğma/fiilen silah/ölüm tehdidinden biriyle birlikte görüldüğünde,
+  //    genel bir aşırı şiddet örüntüsünün parçası olduğunu doğrular (her ikisi zaten tek başına kritik,
+  //    ama birlikte görülmeleri örüntünün ciddiyetini teyit eder).
+  const sexualViolenceEscalation = byKey.cinselZorlama && (
+    byKey.bogma || byKey.silahFiilen || byKey.olumTehdidi
+  );
+
+  // Ağırlıklı toplam puan: her "Evet" maddesinin kendi ağırlığı kadar puan katkısı olur (bilgi amaçlı gösterilir).
+  // Bağlantılı örüntüler (kombinasyon/küme) tetiklendiğinde ekstra sinerji puanı eklenir.
+  let weightedTotal = yesItems.reduce((sum, it) => sum + it.weight, 0);
+  if (physicalComboCritical) weightedTotal += 6;
+  if (controlClusterCritical) weightedTotal += 6;
+  if (gunAccessCombo) weightedTotal += 8;
+  if (jealousyStalkingCombo) weightedTotal += 4;
+  if (postSeparationStalking) weightedTotal += 8;
+  if (sexualViolenceEscalation) weightedTotal += 6;
+
+  // --- SEÇENEK D: Ağırlıksız, sade "kritik gösterge sayısı" modeli ---
+  // Puan yerine yalnızca literatürde en güçlü ilişkili (ağırlığı 7-10) maddelerden kaç tanesinin
+  // "Evet" olduğu ve kaç kritik kombinasyonun tetiklendiği sayılır. Diğer (bağlamsal/zayıf) maddeler
+  // sonucu belirlemez, yalnızca bilgi amaçlı gösterilir.
+  const criticalHitCount = yesItems.filter(it => it.critical).length
+    + (physicalComboCritical ? 1 : 0)
+    + (controlClusterCritical ? 1 : 0)
+    + (gunAccessCombo ? 1 : 0)
+    + (postSeparationStalking ? 1 : 0);
+  const MAX_CRITICAL_HITS = 12; // 8 temel kritik madde + 4 kombinasyon
+
+  const lethalCount = criticalHitCount; // eski adla uyumluluk için
+
+  const pct = Math.round((criticalHitCount / MAX_CRITICAL_HITS) * 100);
+  pctDisplay.textContent = criticalHitCount + ' / ' + MAX_CRITICAL_HITS + ' kritik gösterge';
+  fill.style.width = Math.max(pct, 3) + '%';
+
+  // Sınıflandırma tamamen kritik gösterge SAYISINA göre yapılır (ağırlık/puan kullanılmaz):
+  //   0 kritik gösterge  → Tehdit emaresi yok
+  //   1 kritik gösterge  → Yüksek düzey cinayet emaresi
+  //   2 kritik gösterge  → Şiddetli düzey cinayet emaresi
+  //   3+ kritik gösterge → Acil durum (çok yüksek düzey)
+  // "Kritik gösterge" = ağırlığı 7-10 olan bir maddeye "Evet" demek, ya da bir kombinasyon/küme kuralının
+  // tetiklenmesi (fiziksel şiddet+ağır şiddet, kontrol kümesi 3+, silah erişimi+tehdit, ayrılık sonrası takip).
+  let level, desc, resources;
+
+  if (criticalHitCount === 0) {
+    level = 'Risk durumunuz: Tehdit emaresi yok';
+    levelText.className = 'level level-high';
+    levelText.style.color = 'var(--text-muted)';
+    fill.style.background = 'var(--none)';
+    pctDisplay.style.color = 'var(--text-muted)';
+    desc = 'Literatürde en güçlü ilişkili (kritik) göstergelerden hiçbirine "Evet" demediniz.';
+    resources = [
+      'Şu an acil bir adım gerekmiyor; yine de ilişkideki değişimleri zaman içinde gözlemlemeye devam edin.',
+      'İsterseniz bilgi almak için kendi ülkenizde 24 saat hizmet veren danışma hattını arayabilirsiniz.',
+      'Yaşadığınız olayları (tarih, saat, kısa not) düzenli olarak kaydetmeye şimdiden alışkanlık haline getirin — ileride "abartıyorsun" gibi itibarsızlaştırma girişimlerine karşı elinizde somut bir kayıt bulunur.'
+    ];
+  } else if (criticalHitCount === 1) {
+    level = 'Risk durumunuz: Dikkat gerektiren gösterge';
+    levelText.className = 'level level-low';
+    levelText.style.color = '';
+    fill.style.background = 'var(--low)';
+    pctDisplay.style.color = 'var(--low)';
+    desc = 'Literatürde güçlü ilişkili bir göstergeye "Evet" dediniz. Tek başına bu, henüz "cinayet emaresi" düzeyinde bir sonuç değil, ama ciddiye alınması ve izlenmesi gereken bir işaret. Aşağıda buna özel önerileri bulabilirsiniz.';
+    resources = [
+      'Kendi ülkenizde 24 saat hizmet veren danışma hattını arayarak durumunuzu bir uzmanla değerlendirin.',
+      'Yaşadığınız olayları mutlaka kayıt altına alın (tarih, saat, mesaj, ses/fotoğraf, varsa tanık) — bu hem ileride hukuki süreçte kanıt oluşturur, hem de sizi "abartıyorsun", "paranoyaklaşıyorsun" gibi karalama/itibarsızlaştırma girişimlerine karşı korur.'
+    ];
+  } else if (criticalHitCount === 2) {
+    level = 'Risk durumunuz: Yüksek düzey cinayet emaresi';
+    levelText.className = 'level level-mid';
+    levelText.style.color = '';
+    fill.style.background = 'var(--mid)';
+    pctDisplay.style.color = 'var(--mid)';
+    desc = 'Literatürde en güçlü ilişkili göstergelerden ikisine birden "Evet" dediniz. Bu kombinasyon, kadın cinayeti vakalarında sık görülen bir örüntüyle örtüşüyor. Aşağıda bu ikisine özel önerileri bulabilirsiniz.';
+    resources = [
+      'Kendi ülkenizde 24 saat hizmet veren danışma veya polis imdat servisine başvurun.',
+      'Bölgenizdeki bir kadına yönelik şiddeti önleme/koruma merkezi ile temasa geçmeyi düşünün.',
+      'Yaşadığınız her olayı mutlaka kayıt altına alın (tarih, saat, mesaj, ses/fotoğraf, varsa tanık) — bu hem hukuki sürecin temelini oluşturur, hem de sizi "abartıyorsun", "paranoyaklaşıyorsun" gibi karalama/itibarsızlaştırma girişimlerine karşı korur.'
+    ];
+  } else {
+    level = 'Risk durumunuz: Acil durum (çok yüksek düzey cinayet emaresi)';
+    levelText.className = 'level level-severe';
+    levelText.style.color = '';
+    fill.style.background = 'var(--severe)';
+    pctDisplay.style.color = 'var(--severe)';
+    desc = `Şimdi bir şeyler yapmalısınız. Literatürde en güçlü ilişkili göstergelerden ${criticalHitCount} tanesine birden "Evet" dediniz. Aşağıda her birine özel önerileri bulabilirsiniz.`;
+    resources = [
+      'Şimdi, mümkünse güvenli bir yerdeyken, kendi ülkenizde 24 saat hizmet veren acil yardım/polis imdat servisini arayın.',
+      'Mümkünse şu an yalnız kalmayın; güvendiğiniz biriyle birlikte olun.',
+      'Acil bir tehlike anında beklemeden ülkenizin acil yardım/polis imdat numarasını arayın.',
+      'Güvenli bir anınızda olayları mutlaka kayıt altına alın (tarih, saat, mesaj, ses/fotoğraf, varsa tanık) — bu hem hukuki süreçte kanıt oluşturur, hem de sizi "abartıyorsun", "paranoyaklaşıyorsun" gibi karalama/itibarsızlaştırma girişimlerine karşı korur.'
+    ];
+  }
+
+  levelText.textContent = level;
+  levelDesc.textContent = desc;
+  resourcesList.innerHTML = resources.map(r => `<li>${r}</li>`).join('');
+
+  // --- Madde ve kombinasyon bazlı dinamik öneriler ---
+  // Jenerik bir metin yerine, yalnızca "Evet" dediğiniz kritik maddeler ve tetiklenen kombinasyonlar
+  // için ayrı ayrı, o maddeye özgü öneriler listelenir.
+  const guidanceBox = document.getElementById('guidance-box');
+  const guidanceList = document.getElementById('guidance-list');
+  const guidanceItems = [];
+
+  yesItems.filter(it => it.critical).forEach(it => {
+    if (ITEM_GUIDANCE[it.key]) guidanceItems.push(ITEM_GUIDANCE[it.key]);
+  });
+
+  const comboFlags = {
+    physicalComboCritical, controlClusterCritical, gunAccessCombo,
+    jealousyStalkingCombo, postSeparationStalking, sexualViolenceEscalation
+  };
+  Object.keys(comboFlags).forEach(flagKey => {
+    if (comboFlags[flagKey] && COMBO_GUIDANCE[flagKey]) guidanceItems.push(COMBO_GUIDANCE[flagKey]);
+  });
+
+  if (guidanceItems.length > 0) {
+    guidanceBox.style.display = 'block';
+    guidanceList.innerHTML = guidanceItems.map(g => `<li>${g}</li>`).join('');
+  } else {
+    guidanceBox.style.display = 'none';
+  }
+
+  // "Evet" işaretlenen maddeler: ağırlığı yüksek olan (en tehlikeli) önce sıralanır
+  const ranked = yesItems
+    .slice()
+    .sort((a, b) => b.weight - a.weight);
+
+  let listHtml = '';
+  if (ranked.length > 0) {
+    listHtml += ranked.map(it => {
+      const mark = it.critical ? '<span class="crit-mark">✱ </span>' : '';
+      return `<li>${mark}${it.text} <em>(${it.weight} puan)</em></li>`;
+    }).join('');
+  } else {
+    listHtml += '<li>Hiçbir maddeye "Evet" demediniz.</li>';
+  }
+  topHitsList.innerHTML = listHtml;
+}
+
+document.getElementById('reset-btn').addEventListener('click', () => {
+  Object.keys(state).forEach(id => { state[id].val = null; });
+  document.querySelectorAll('.yn-btn').forEach(c => c.classList.remove('active'));
+  updateProgress();
+});
+
+updateProgress();
+</script>
+</body>
+</html>
